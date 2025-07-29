@@ -35,7 +35,6 @@ This script helps avoid manual copy-pasting of values every month by automatical
 
 | Challenge | Fix |
 |----------|-----|
-| EO had no consistent row for data (some rows were just headers) | We updated the script to always read row `3` for expense values and row `1` for categories |
 | ST had month names in a different format (`Apr 25` vs `Apr-25`) | Implemented a month-normalization logic |
 | Expenses were not syncing when values were 0 or formatted as currency | Ensured script converts and reads numeric values including formatted ones |
 | BE rows in EO caused misalignment | Script now reads only from the correct row and column structure |
